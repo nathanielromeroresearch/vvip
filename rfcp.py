@@ -78,17 +78,26 @@ def main():
         print(Fore.CYAN + logo + Style.RESET_ALL)  # Display logo in cyan
         print(Fore.GREEN + "Choose a script to run:" + Style.RESET_ALL)
         print(Fore.YELLOW + "[1.] BOOSTING TOOL" + Style.RESET_ALL)
-        print(Fore.YELLOW + "[2.] REMOVE INVALID ACCOUNT" + Style.RESET_ALL)
-        print(Fore.YELLOW + "[3.] STOP" + Style.RESET_ALL)  # Option to stop
+        print(Fore.YELLOW + "[2.] AUTO CREATE PAGE" + Style.RESET_ALL)
+        print(Fore.YELLOW + "[3.] AUTO SPAM SHARE" + Style.RESET_ALL)
+        print(Fore.YELLOW + "[4.] TOKEN GETTER [FAST]" + Style.RESET_ALL)
+        print(Fore.YELLOW + "[5.] REMOVE INVALID ACCOUNT" + Style.RESET_ALL)
+        print(Fore.YELLOW + "[6.] STOP" + Style.RESET_ALL) 
         
         choice = input(Fore.MAGENTA + "Enter the number of your choice: " + Style.RESET_ALL)
         
         if choice == '1':
-            run_script('tools/www.py')
+            run_script('tools/vvip.py')
         elif choice == '2':
+            run_script('tools/createpage.py')
+        elif choice == '3':
+            run_script('tools/removeerror.py')
+        elif choice == '4':
+            run_script('tools/Tokengetter.py')
+        elif choice == '5':
             run_script('tools/removeerror.py')
       
-        elif choice == '3':
+        elif choice == '6':
             print(Fore.GREEN + "Exiting program. Goodbye!" + Style.RESET_ALL)
             break  # Exit the loop to stop the program
         else:
